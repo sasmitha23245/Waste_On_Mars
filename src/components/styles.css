@@ -1,0 +1,85 @@
+/* General App Container */
+.results-container {
+  margin-top: 20px;
+  padding: 24px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #2b0a0a, #4d1c1c);
+  color: #f5f5f5;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  font-family: 'Orbitron', sans-serif; /* Sci-fi font */
+}
+
+/* Headings */
+.results-container h2, .results-container h3, .results-container h4 {
+  color: #ff6f3c; /* Mars orange */
+  text-shadow: 1px 1px 2px #aa3300;
+}
+
+/* Table Styles */
+.results-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  background-color: #3a1f1f;
+  color: #fff;
+}
+
+.results-container th, .results-container td {
+  border: 1px solid #5c2b2b;
+  padding: 10px;
+  text-align: center;
+}
+
+.results-container th {
+  background-color: #541c1c;
+  color: #ffb07c;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.results-container td {
+  background-color: #3a1f1f;
+}
+
+/* Hover effect for rows */
+.results-container tbody tr:hover {
+  background-color: #5c2b2b;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Process Steps List */
+.results-container ol {
+  margin-left: 20px;
+  margin-top: 8px;
+  padding-left: 10px;
+  color: #ffa066;
+}
+
+.results-container li {
+  margin-bottom: 6px;
+}
+
+/* Cards for each material process */
+.material-process {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #4d1c1c;
+  box-shadow: 0 3px 8px rgba(255, 111, 60, 0.5);
+}
+
+/* Strong Text Highlights */
+.results-container strong {
+  color: #ff9a4d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .results-container {
+    padding: 16px;
+  }
+
+  .results-container th, .results-container td {
+    padding: 6px;
+  }
+}

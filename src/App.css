@@ -1,38 +1,133 @@
-.App {
+/* ---------- GLOBAL ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(180deg, #1b0a0a 0%, #3a1f1f 100%);
+  color: #f5f5f5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ff6f3c;
+  text-shadow: 1px 1px 2px #aa3300;
+}
+
+/* ---------- APP CONTAINER ---------- */
+.app-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---------- CARDS ---------- */
+.card, .results-container, .material-process, .debug-info {
+  background-color: #4d1c1c;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(255, 111, 60, 0.4);
+}
+
+/* ---------- TABLES ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  background-color: #3a1f1f;
+  color: #fff;
+}
+
+th, td {
+  border: 1px solid #5c2b2b;
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+th {
+  background-color: #541c1c;
+  color: #ffb07c;
+  text-shadow: 1px 1px 1px #000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+tbody tr:hover {
+  background-color: #5c2b2b;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* ---------- INPUTS & DROPDOWNS ---------- */
+input, select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #5c2b2b;
+  background-color: #3a1f1f;
+  color: #fff;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #ff6f3c;
+  box-shadow: 0 0 6px #ff6f3c;
+}
+
+/* ---------- BUTTONS ---------- */
+button {
+  background-color: #ff6f3c;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ffa066;
+  box-shadow: 0 0 10px #ff6f3c;
+}
+
+/* ---------- PROCESS STEPS ---------- */
+.material-process {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #4d1c1c;
+  box-shadow: 0 3px 8px rgba(255, 111, 60, 0.5);
+}
+
+.material-process ol {
+  margin-left: 20px;
+  margin-top: 8px;
+  padding-left: 10px;
+  color: #ffa066;
+}
+
+.material-process li {
+  margin-bottom: 6px;
+}
+
+/* ---------- DEBUG INFO ---------- */
+.debug-info {
+  background-color: #3a1f1f;
+  padding: 12px;
+  font-size: 12px;
+  color: #ffb07c;
+  border-radius: 8px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 12px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  th, td {
+    padding: 6px;
   }
-  to {
-    transform: rotate(360deg);
+
+  input, select, button {
+    width: 100%;
+    margin-top: 6px;
   }
 }
